@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:400i&display=swap');
+body{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.myHeader{
+    font-size: 1.75rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.mytable{
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.25rem;
+}
+th, td{
+    text-align: center; 
+    padding: 0px;
+}
+
+tr:nth-child(even){
+    background-color: #D3E2F4;
+}
+
+
+th:not(:last-of-type),td:not(:last-of-type){
+    border-right: 1px solid rgb(175, 71, 71);
+}
+
+@media (max-width: 320px){
+    .myHeader{
+        font-size: 1.25rem;
+        margin: 1rem auto;
+        
+    }
+    .mytable{
+        font-size: 0.75rem;
+    }
+    .mytable td{
+        padding-right: 0px;
+    }
+    tbody tr:hover, tbody tr:nth-child(even):hover{
+        font-size: 0.8rem;
+    }
+    
+}
+@media (min-width: 450px) {
+    tbody tr:hover, tbody tr:nth-child(even):hover{
+        background-color: rgba(140, 148, 145, 0.575);
+        color: rgb(24, 25, 26);
+        font-style: italic;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+}

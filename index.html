@@ -1,0 +1,56 @@
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/png" rel="shortcut icon" href="assets/ico/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" defer>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" defer>
+    <link rel="stylesheet" href="css/main.css" defer>
+    <link type="image/png" rel="shortcut icon" href="assets/ico/favicon.png" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js" defer></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" defer></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+
+    <script src="js/view/DailyComponent.js" defer></script>
+    <script src="js/view/WeatherComponent.js" defer></script>
+    <script src="js/data/DailyWeather.js" defer></script>
+    <script src="js/proxy/ApiRequest.js" defer></script>
+    <script src="js/proxy/ProxyManager.js" defer></script>
+    <script src="js/controllers/Manager.js" defer></script>    
+    <script src="js/init.js" defer></script>
+</head>
+
+<body>
+    <main id="main">
+        <main >
+            <div class="col-lg-10 col-sm-12 col-md-12">
+                <h1 class="myHeader">Week's weather</h1>
+            </div>
+            
+            <div class="row col-lg-10 col-sm-12 col-md-12">
+                <table class="table mytable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day of the week</th>
+                            <th>Weather</th>
+                            <th>Min Temp</th>
+                            <th>Max Temp</th>
+                            <th>Wind Speed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weaserTableBody">
+                    </tbody>
+                </table>
+            </div>
+            
+        </main>
+    
+    </main>
+</body>
+
+</html>
